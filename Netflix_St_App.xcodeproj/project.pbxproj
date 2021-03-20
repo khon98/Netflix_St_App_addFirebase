@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2750A93026047A130029F076 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2750A92F26047A130029F076 /* Kingfisher */; };
+		2750A93826049FF30029F076 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2750A93726049FF30029F076 /* Player.storyboard */; };
 		276DADC3260367A600A9ABD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DADC2260367A600A9ABD2 /* AppDelegate.swift */; };
 		276DADC5260367A600A9ABD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DADC4260367A600A9ABD2 /* SceneDelegate.swift */; };
-		276DADC7260367A600A9ABD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DADC6260367A600A9ABD2 /* ViewController.swift */; };
 		276DADCA260367A600A9ABD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276DADC8260367A600A9ABD2 /* Main.storyboard */; };
 		276DADCC260367A900A9ABD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276DADCB260367A900A9ABD2 /* Assets.xcassets */; };
 		276DADCF260367A900A9ABD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276DADCD260367A900A9ABD2 /* LaunchScreen.storyboard */; };
 		276DADDA260367A900A9ABD2 /* Netflix_St_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DADD9260367A900A9ABD2 /* Netflix_St_AppTests.swift */; };
 		276DADE5260367AA00A9ABD2 /* Netflix_St_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DADE4260367AA00A9ABD2 /* Netflix_St_AppUITests.swift */; };
+		276DADF9260369D300A9ABD2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DADF8260369D300A9ABD2 /* SearchViewController.swift */; };
+		276DADFE2603918600A9ABD2 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DADFD2603918600A9ABD2 /* AppTabBarController.swift */; };
+		276DAE032603920600A9ABD2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DAE022603920600A9ABD2 /* HomeViewController.swift */; };
+		276DAE0B2603924300A9ABD2 /* RecommendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DAE0A2603924300A9ABD2 /* RecommendListViewController.swift */; };
+		276DAE152603928800A9ABD2 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DAE142603928800A9ABD2 /* PlayerViewController.swift */; };
+		276DAE1A260392A600A9ABD2 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276DAE19260392A600A9ABD2 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2750A93726049FF30029F076 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
 		276DADBF260367A600A9ABD2 /* Netflix_St_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix_St_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		276DADC2260367A600A9ABD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		276DADC4260367A600A9ABD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		276DADC6260367A600A9ABD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		276DADC9260367A600A9ABD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		276DADCB260367A900A9ABD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		276DADCE260367A900A9ABD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,12 @@
 		276DADE0260367AA00A9ABD2 /* Netflix_St_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Netflix_St_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		276DADE4260367AA00A9ABD2 /* Netflix_St_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_St_AppUITests.swift; sourceTree = "<group>"; };
 		276DADE6260367AA00A9ABD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276DADF8260369D300A9ABD2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		276DADFD2603918600A9ABD2 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		276DAE022603920600A9ABD2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		276DAE0A2603924300A9ABD2 /* RecommendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendListViewController.swift; sourceTree = "<group>"; };
+		276DAE142603928800A9ABD2 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		276DAE19260392A600A9ABD2 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2750A93026047A130029F076 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +115,14 @@
 			children = (
 				276DADC2260367A600A9ABD2 /* AppDelegate.swift */,
 				276DADC4260367A600A9ABD2 /* SceneDelegate.swift */,
-				276DADC6260367A600A9ABD2 /* ViewController.swift */,
+				276DADFD2603918600A9ABD2 /* AppTabBarController.swift */,
+				276DAE022603920600A9ABD2 /* HomeViewController.swift */,
+				276DADF8260369D300A9ABD2 /* SearchViewController.swift */,
+				276DAE0A2603924300A9ABD2 /* RecommendListViewController.swift */,
 				276DADC8260367A600A9ABD2 /* Main.storyboard */,
+				2750A93726049FF30029F076 /* Player.storyboard */,
+				276DAE142603928800A9ABD2 /* PlayerViewController.swift */,
+				276DAE19260392A600A9ABD2 /* PlayerView.swift */,
 				276DADCB260367A900A9ABD2 /* Assets.xcassets */,
 				276DADCD260367A900A9ABD2 /* LaunchScreen.storyboard */,
 				276DADD0260367A900A9ABD2 /* Info.plist */,
@@ -144,6 +164,9 @@
 			dependencies = (
 			);
 			name = Netflix_St_App;
+			packageProductDependencies = (
+				2750A92F26047A130029F076 /* Kingfisher */,
+			);
 			productName = Netflix_St_App;
 			productReference = 276DADBF260367A600A9ABD2 /* Netflix_St_App.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +238,9 @@
 				Base,
 			);
 			mainGroup = 276DADB6260367A600A9ABD2;
+			packageReferences = (
+				2750A92E26047A130029F076 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 276DADC0260367A600A9ABD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				276DADCF260367A900A9ABD2 /* LaunchScreen.storyboard in Resources */,
+				2750A93826049FF30029F076 /* Player.storyboard in Resources */,
 				276DADCC260367A900A9ABD2 /* Assets.xcassets in Resources */,
 				276DADCA260367A600A9ABD2 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				276DADC7260367A600A9ABD2 /* ViewController.swift in Sources */,
+				276DAE032603920600A9ABD2 /* HomeViewController.swift in Sources */,
+				276DADF9260369D300A9ABD2 /* SearchViewController.swift in Sources */,
 				276DADC3260367A600A9ABD2 /* AppDelegate.swift in Sources */,
+				276DAE1A260392A600A9ABD2 /* PlayerView.swift in Sources */,
+				276DAE152603928800A9ABD2 /* PlayerViewController.swift in Sources */,
+				276DAE0B2603924300A9ABD2 /* RecommendListViewController.swift in Sources */,
 				276DADC5260367A600A9ABD2 /* SceneDelegate.swift in Sources */,
+				276DADFE2603918600A9ABD2 /* AppTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +619,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2750A92E26047A130029F076 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2750A92F26047A130029F076 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2750A92E26047A130029F076 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 276DADB7260367A600A9ABD2 /* Project object */;
 }

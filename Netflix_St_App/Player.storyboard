@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="x35-QJ-gWa">
+            <objects>
+                <viewController storyboardIdentifier="PlayerViewController" id="aFg-g7-HHb" customClass="PlayerViewController" customModule="Netflix_St_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wsi-NE-6r7">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAN-pu-2kO" customClass="PlayerView" customModule="Netflix_St_App" customModuleProvider="target">
+                                <rect key="frame" x="44" y="0.0" width="808" height="414"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4K-VT-PkV">
+                                <rect key="frame" x="44" y="0.0" width="808" height="414"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LG9-RD-zeo">
+                                        <rect key="frame" x="384" y="187" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="807-ub-11h"/>
+                                            <constraint firstAttribute="height" constant="40" id="DqO-Ph-8ri"/>
+                                        </constraints>
+                                        <state key="normal" image="play.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <state key="selected" image="pause" catalog="system"/>
+                                        <connections>
+                                            <action selector="togglePlayButton:" destination="aFg-g7-HHb" eventType="touchUpInside" id="Fju-EJ-Izz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yz0-Uq-pTB">
+                                        <rect key="frame" x="752.5" y="30" width="30.5" height="29"/>
+                                        <state key="normal" image="xmark" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeButtonTapped:" destination="aFg-g7-HHb" eventType="touchUpInside" id="Pyg-s8-ezp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LG9-RD-zeo" firstAttribute="centerY" secondItem="p4K-VT-PkV" secondAttribute="centerY" id="FRY-Vh-ghz"/>
+                                    <constraint firstItem="Yz0-Uq-pTB" firstAttribute="top" secondItem="p4K-VT-PkV" secondAttribute="top" constant="30" id="T6a-d3-bhc"/>
+                                    <constraint firstItem="LG9-RD-zeo" firstAttribute="centerX" secondItem="p4K-VT-PkV" secondAttribute="centerX" id="oJD-qI-a0R"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yz0-Uq-pTB" secondAttribute="trailing" constant="25" id="qbH-CG-EQg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0NO-pY-izs"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p4K-VT-PkV" firstAttribute="top" secondItem="gAN-pu-2kO" secondAttribute="top" id="9NE-Oe-KVL"/>
+                            <constraint firstItem="p4K-VT-PkV" firstAttribute="leading" secondItem="gAN-pu-2kO" secondAttribute="leading" id="D7r-bB-dBb"/>
+                            <constraint firstItem="gAN-pu-2kO" firstAttribute="top" secondItem="wsi-NE-6r7" secondAttribute="top" id="EGo-8h-mWX"/>
+                            <constraint firstItem="gAN-pu-2kO" firstAttribute="leading" secondItem="0NO-pY-izs" secondAttribute="leading" id="HHp-4n-PRq"/>
+                            <constraint firstItem="p4K-VT-PkV" firstAttribute="width" secondItem="gAN-pu-2kO" secondAttribute="width" id="UCE-wa-iTe"/>
+                            <constraint firstItem="p4K-VT-PkV" firstAttribute="height" secondItem="gAN-pu-2kO" secondAttribute="height" id="UkC-HR-c7t"/>
+                            <constraint firstItem="0NO-pY-izs" firstAttribute="trailing" secondItem="gAN-pu-2kO" secondAttribute="trailing" id="k8u-bo-5o9"/>
+                            <constraint firstAttribute="bottom" secondItem="gAN-pu-2kO" secondAttribute="bottom" id="o6u-HX-Bfm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="controlView" destination="p4K-VT-PkV" id="Rnp-GL-rBo"/>
+                        <outlet property="playButton" destination="LG9-RD-zeo" id="PyR-a3-Qek"/>
+                        <outlet property="playerView" destination="gAN-pu-2kO" id="ylL-cO-cdS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQt-Bt-zcb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10.714285714285714" y="-69.565217391304358"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause" catalog="system" width="88" height="128"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
