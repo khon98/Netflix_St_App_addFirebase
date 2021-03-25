@@ -3,10 +3,12 @@ import AVFoundation
 
 class HomeViewController: UIViewController {
     
+    
     var awardRecommendListViewController: RecommendListViewController!
     var hotRecommendListViewController: RecommendListViewController!
     var myRecommendListViewController: RecommendListViewController!
     
+    // 홈 뷰가 불릴때 생성
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "award" {
             let destinationVC = segue.destination as? RecommendListViewController

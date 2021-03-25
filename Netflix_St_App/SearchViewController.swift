@@ -1,8 +1,12 @@
 import UIKit
 import Kingfisher
 import AVFoundation
+import Firebase
 
 class SearchViewController: UIViewController {
+    
+    // 파이어 베이스에 검색 기록 저장
+    let db = Database.database().reference().child("searchHistory")
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var resultCollectionView: UICollectionView!
@@ -92,10 +96,13 @@ extension SearchViewController: UISearchBarDelegate {
             DispatchQueue.main.async {
                 self.movies = movies
                 self.resultCollectionView.reloadData()
+                
+                let timestamp = Date().timeIntervalSince1970.rounded() // 현재 시간을 표현
+                
+                // 아이디를 파이어 베이스에서 자동으로 생성
+                self.db.childByAutoId().setValue(["term": searchTerm, "timestamp": timestamp])
             }
-            
         }
-        
         print("검색어: \(searchTerm)")
     }
 }
@@ -124,12 +131,10 @@ class SearchAPI {
                 completion([])
                 return
             }
-            
             guard let resultData = data else {
                 completion([])
                 return
             }
-            
             let movies = SearchAPI.parseMovie(resultData)
             completion(movies)
         }
